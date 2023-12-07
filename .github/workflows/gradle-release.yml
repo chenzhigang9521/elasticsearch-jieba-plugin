@@ -22,7 +22,7 @@ jobs:
      run: chmod +x gradlew
 
    - name: Build with Gradle
-     run: ./gradlew clean pz
+     run: ./gradlew clean pz --debug --stacktrace
 
    - name: Archive production artifacts
      uses: actions/upload-artifact@v2
